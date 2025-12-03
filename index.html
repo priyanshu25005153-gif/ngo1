@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helping Hands - Non-Profit Organization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #333; }
+    header { background: #00796b; color: #fff; padding: 2em 0; text-align: center; }
+    nav { background: #004d40; text-align: center; }
+    nav a {
+      color: #fff; padding: 1em 2em; display: inline-block; text-decoration: none; font-weight: bold;
+    }
+    nav a:hover { background: #00362e; }
+    .container { max-width: 900px; margin: 2em auto; background: #fff; padding: 2em;
+      border-radius: 10px; box-shadow: 0 0 30px #b0bec5; }
+    section { margin-bottom: 2.1em; }
+    h2 { color: #00796b; margin-bottom: 0.5em; }
+    .events-list, .volunteer-list {
+      display: flex; flex-wrap: wrap; gap: 2em; margin-top: 1em;
+    }
+    .event, .volunteer-option {
+      background: #e0f2f1; padding: 1em 1.2em; border-radius: 8px; width: 250px;
+      box-shadow: 0 1px 4px #b2dfdb;
+      margin-bottom: 1em;
+    }
+    .donate-btn {
+      background: #00796b; color: #fff; border: none; padding: 1em 2em;
+      font-size: 1.1em; border-radius: 6px; cursor: pointer; margin-top: 1em;
+    }
+    .donate-btn:hover { background: #004d40; }
+    footer {
+      background: #00796b; color: #fff; text-align: center; padding: 1.5em 0; margin-top: 2.5em;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1em; }
+      .events-list, .volunteer-list { flex-direction: column; gap: 1em; }
+      .event, .volunteer-option { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Helping Hands</h1>
+    <p>Making the World a Better Place Together</p>
+  </header>
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#events">Events</a>
+    <a href="#donate">Donate</a>
+    <a href="#volunteer">Volunteer</a>
+  </nav>
+  <div class="container">
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>
+        At Helping Hands, our mission is to empower underprivileged communities through education, healthcare, and sustainable development programs. We believe in collective action and the power of volunteers to make a difference.
+      </p>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <div class="events-list">
+        <div class="event">
+          <strong>Winter Clothing Drive</strong>
+          <p>Date: December 10, 2025<br>
+          Location: Community Center</p>
+          <p>Join us to provide warmth to those in need!</p>
+        </div>
+        <div class="event">
+          <strong>Food Distribution Camp</strong>
+          <p>Date: January 15, 2026<br>
+          Location: Central Park</p>
+          <p>Help us distribute food packages to families.</p>
+        </div>
+        <div class="event">
+          <strong>Health Awareness Workshop</strong>
+          <p>Date: February 2, 2026<br>
+          Location: Local Clinic</p>
+          <p>Spread awareness and provide basic medical aid.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate">
+      <h2>Donation Option</h2>
+      <p>
+        Your generous donations help us reach more people and support ongoing projects.
+        Every contribution counts!
+      </p>
+      <button class="donate-btn" onclick="alert('Redirect to donation portal or payment page')">Donate Now</button>
+    </section>
+
+    <section id="volunteer">
+      <h2>Volunteer Opportunities</h2>
+      <div class="volunteer-list">
+        <div class="volunteer-option">
+          <strong>Teaching Support</strong>
+          <p>Help tutor children in after-school programs. No prior experience needed.</p>
+        </div>
+        <div class="volunteer-option">
+          <strong>Event Assistance</strong>
+          <p>Support our team during fundraising and community outreach events.</p>
+        </div>
+        <div class="volunteer-option">
+          <strong>Medical Aid</strong>
+          <p>If you have medical training, assist our health camps and clinics.</p>
+        </div>
+      </div>
+      <p>Interested in joining? <a href="mailto:volunteer@helpinghands.org">Contact us</a> to sign up as a volunteer!</p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Helping Hands. All rights reserved.
+  </footer>
+</body>
+</html>
